@@ -110,3 +110,26 @@ console.log(15 + '5'); // Devuelve la cadena de caracter en ASCII
 console.log(5 + '2');
 
 // Jerarquia de operadores () --> si no estan los parentesis se operan de izq a der * y /   + y -    5/8+9    --> (5/8)+9
+
+/** 
+    OPERADORES LOGICOS
+    && --> Y    || --> O
+                         **/
+                       
+let operador = "m";
+
+// puede multiplicar si es m y si es *
+let opera = (operador == "m" && operador == "*")
+
+console.log(5 !== '5');
+
+// alert
+// window.prompt('Hola tipea algo ' , 'Title');
+
+
+const valor1 = window.prompt('Ingresa un usuario','tu usuario    ');
+alert(valor1);
+alert(window.prompt('Pregunta dentro de alerta'));
+
+const continuar = window.confirm('Desea continuar en esta pagina?');
+alert(continuar);
