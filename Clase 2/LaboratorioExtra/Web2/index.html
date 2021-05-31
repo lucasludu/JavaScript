@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+
+    <body>
+
+        <script>
+
+            var
+                n1 = Number(prompt('Ingrese Primer Numero')),
+                n2 = Number(prompt('Ingrese Segundo Numero')),
+                o  = prompt('Ingrese Operacion');
+                r  = false;
+
+            o = o.toLowerCase();
+
+            if (o == '+' || o == 's') {
+                r = n1 + n2;
+            } else if (o == '-' || o == 'r') {
+                r = n1 - n2;
+            } else if (o == '*' || o == 'm') {
+                r = n1 * n2;
+            } else if (o == '/' || o == 'd') {
+                if (n2 != 0) {
+                    r = n1 / n2;
+                } else {
+                    alert('No se puede dividir por CERO');
+                }
+            }
+
+            alert('Resultado: ' + r);
+
+        </script>
+        
+    </body>
+
+</html>
