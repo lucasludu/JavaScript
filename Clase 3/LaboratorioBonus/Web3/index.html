@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laboratorio 3</title>
+
+    </head>
+
+    <body>
+
+        <script>
+
+            /* Obtener la suma de todos los PBI */
+            function getSum (statsSource) {
+                var suma = 0;
+                for (var i = 0; i < statsSource.length; i++) {
+                    var el = statsSource[i];
+                    suma += el.pbi;
+                }
+                return suma;
+            }
+
+        </script>
+        
+    </body>
+
+</html>

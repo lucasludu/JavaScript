@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+
+    <body>
+
+        <script>
+
+            /** 
+                Un instituto de investigación científica ha descubierto una
+                ecuación para predecir el comportamiento de un determinado artefacto de I.A. (Inteligencia Artificial). La ecuación es la siguiente:
+                P = 4 i^2 −3
+                Sin embargo, necesitan un programa para poder probar dicha ecuación con cientos de valores; ya que hacerlo de forma manual sería una tarea muy tediosa. Tu trabajo será diseñar un programa para evaluar dicha ecuación en todos los números del 1 al 200 y mostrar el resultado.            
+                Notas:
+                Evaluar una ecuación significa cambiar la variable (en este caso la letra i ) por el valor en cuestión. En este ejemplo, la variable debe tomar primero el valor 1, luego el valor 2 y así sucesivamente.
+            */
+
+            function P(i) {
+                return (4 * (Math.pow(i, 2)) - 3);
+            }
+
+            function getValsFromP(inicio, fin) {
+                var valores = [];
+                for (var i = inicio; i < fin; i++) {
+                    valores.push({
+                        variable: i,
+                        valor: P(i)
+                    })
+                }
+                return valores;
+            }
+
+        </script>
+        
+    </body>
+
+</html>
