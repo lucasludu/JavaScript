@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        /**
+         Variables en JS
+         var let const 
+         scope es el alcance o visualizacion de las variables en nustro contexto
+         variables locales y globales
+        **/
+
+        /* var a:*/
+        //console.log(a); // variable indefinida
+        /*
+            function sumar() {
+                a = 7;
+                b = 9;
+                var total = a + b;
+                //console.log(total);
+                return total;
+            }    
+        */
+        // console.log(sumar()); // vuelve a imprimir el 16.
+        /*
+        // Hosting--> eleva las variables (lo hace internamente JS) no modifica el codigo
+        let a = 5; // let es global
+        let b = 6; // let es global
+        console.log(sumar());
+        function sumar() {
+            let a = 7; // let es local
+            let b = 9; // let es local
+            var total = a + b;
+            //console.log(total);
+            return total;
+        }
+        console.log(sumar()); // funcion con variable interna
+        console.log(a + b); // variable externa
+        */
+        /*
+        function imprimir() { // bloque de codigo entre las llaves
+            // var a;
+            // var tiene un scope de tipo funcion
+            // let y const tiene un scope de tipo bloque
+            //console.log(i);
+            //console.log(j);
+            for (let i = 0; i < 5; i++) {
+                console.log('Indice: ' + i);
+                if(i == 1) {
+                    //console.log(j); // no tengo alcance al dato. no se puede usar antes de la declaracion
+                    let j = 5;
+                }
+            }
+            // no puedo referenciar a un let fuera de bloque
+            console.log(i);
+            //console.log(j);
+        }
+        //console.log('Fuera de la funcion: ' + i);
+        imprimir();
+        */
+
+        // CONST
+        const direccion = 'Lavalle 608';
+        console.log(direccion);
+        const direccionDividida = direccion.split(' '); // lo convierto en un arreglo
+        console.log(direccionDividida);
+        const calle = direccionDividida[0];
+        console.log(calle);
+
+    </script>
+
+</body>
+
+</html>
