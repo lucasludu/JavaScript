@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.flexdatalist.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.flexdatalist.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input 
+    id="flexdatalist" 
+    type="text" 
+    list="Cursos" 
+    placeholder="Lista de Provincias" 
+    class="flexdatalist"
+    data-data="json/provincias.json" 
+    data-search-in="nombre"
+    data-visible-properies= '["nombre", "id", "nombre_completo"]'
+    value="74"
+    data-value-property="id"
+    multiple="multiple"
+    >
+
+    <script>
+        $('.flexdatalist').flexdatalist({
+            minLength: 1,
+            searchIn: 'nombre',
+            data: 'json/provincias.json',
+            noResultsText: "No existen provincias con esa INFO",
+            value: 'id',
+            valueProperty:'id',
+            visibleProperties: ['nombre', 'id', 'nombre_completo']
+        });
+    </script>
+
+    <!-- DEJE EN EL MINUTO 53
+        <datalist id="Cursos">
+            <option value="JS01">    JavaScript desde Cero  </option>
+            <option value="HTML">    HTML                   </option>
+            <option value="CSS">     CSS                    </option>
+            <option value="JSNINJA"> JavaScript Ninja       </option>
+            <option value="REACT">   React                  </option>
+            <option value="ANGULAR"> Angular                </option>
+            <option value="NODE">    Node                   </option>
+        </datalist>
+    -->
+
+</body>
+
+</html>

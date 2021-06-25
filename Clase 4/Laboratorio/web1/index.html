@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            div {
+                display: none;
+            }
+        </style>
+        <title>Laboratorio 1</title>
+    </head>
+
+    <body>
+
+        <div>MI CAJA</div>
+        <button>Boton de Control</button>
+
+        <script>
+            var siguiente = 'aparecer';
+            $('button').click(handler)
+            function handler() {
+                if(siguiente == 'aparecer') {
+                    $('div').show();
+                    siguiente = 'desaparecer'
+                } else if (siguiente == 'desaparecer') {
+                    $('div').hide();
+                    siguiente = 'aparecer';
+                }
+            }
+        </script>
+
+        
+    </body>
+
+</html>
